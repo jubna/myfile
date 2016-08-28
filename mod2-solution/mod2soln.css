@@ -1,9 +1,18 @@
+
 /********** Base styles **********/
 * {
   box-sizing: border-box;
 }
 h1 {
   text-align: center;
+}
+.container {
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
 }
 #section1 {
   position:relative;
@@ -18,14 +27,14 @@ h1 {
  
 }
 section #p1{
-   position: absolute;
+        position: absolute;
 	top: -20px;
 	right: 0px;
 	background-color:pink;
 	width: 100px;
 	height: 35px;
-  border: 1px  solid black;
-  font-size: 20px;
+        border: 1px  solid black;
+        font-size: 20px;
     
         
 }
@@ -37,8 +46,8 @@ section #p2 {
 	background-color:red;
 	width: 100px;
 	height: 35px;
-  border: 1px  solid black;
-   font-size: 20px;
+        border: 1px  solid black;
+        font-size: 20px;
      
 }
 
@@ -49,8 +58,8 @@ section #p3 {
 	background-color:yellow;
 	width: 100px;
 	height: 35px;
-  border: 1px  solid black;
-  font-size: 20px;
+        border: 1px  solid black;
+        font-size: 20px;
          
 }
 /* Simple Responsive Framework. */
@@ -105,10 +114,13 @@ section #p3 {
   }
 }
 
-/********** for tablets **********/
+/********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
+        
+ 
+    
   }
    
   .col-sm-1 {
@@ -147,4 +159,5 @@ section #p3 {
   .col-sm-12 {
     width: 100%;
   }
+}
 }
